@@ -1,5 +1,5 @@
 import { carouselEndpointData } from 'Config/Helpers/strings';
-import { Slider } from 'components/Slider';
+import { Slider, BlockSlides } from 'components';
 
 import './App.css';
 
@@ -14,6 +14,8 @@ function App() {
           </>
         );
       })}
+      <p>Different Approach</p>
+      <BlockSlides slides={carouselEndpointData} />
     </div>
   );
 }

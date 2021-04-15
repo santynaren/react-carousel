@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { IconButton } from 'components/IconButton';
+import { IconButton, BlockSlideDisplay } from 'components';
 import { AiFillLeftCircle, AiFillRightCircle } from 'react-icons/ai';
 import 'assets/styles/app.css';
-const Slider = ({ images }) => {
+const BlockSlides = ({ slides }) => {
   const [count, setCount] = React.useState(0);
-  console.log(images.length);
+  console.log(slides.length);
   const nextSlide = () => {
     setCount((val) => val + 1);
   };
@@ -20,15 +20,19 @@ const Slider = ({ images }) => {
       >
         <AiFillLeftCircle />
       </IconButton>
-      <img src={images[count]} alt="images" />
+      <BlockSlideDisplay
+        title={slides[count].title}
+        images={slides[count].images}
+      />
       <IconButton
         actionName="next"
         action={nextSlide}
-        visibile={count === images.length - 1 ? false : true}
+        visibile={count === slides.length - 1 ? false : true}
       >
         <AiFillRightCircle />
       </IconButton>
     </div>
   );
 };
-export { Slider };
+
+export { BlockSlides };
