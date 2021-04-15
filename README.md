@@ -1,5 +1,7 @@
 # Whitespectre Task Narendra
 
+- Total time taken by me to complete this task [WakaTime](https://wakatime.com/@santynaren/projects/ovkwywskbh?start=2021-04-15&end=2021-04-22)
+- Repo [Github](https://github.com/santynaren/react-carousel)
 ### Technical Details
 1. CRA
 2. react-icons
