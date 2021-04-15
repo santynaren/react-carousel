@@ -4,7 +4,6 @@ import { AiFillLeftCircle, AiFillRightCircle } from 'react-icons/ai';
 import 'assets/styles/app.css';
 const BlockSlides = ({ slides }) => {
   const [count, setCount] = React.useState(0);
-  console.log(slides.length);
   const nextSlide = () => {
     setCount((val) => val + 1);
   };
